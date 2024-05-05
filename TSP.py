@@ -48,7 +48,9 @@ def hillClimbing(tsp):
     print(currentRouteLength)
     neighbours =getNeighbours (currentSolution)
     print("Below are neighbours list ")
-    print(neighbours)
+    nighbours=getneighbour(tsp,currrentSolution)
+    for i in nighbours:
+        print(f"{i} cost= {routeLength(tsp, i)}")
 
     bestNeighbour, bestNeighbourRouteLength = getBestNeighbour (tsp, neighbours)
 
