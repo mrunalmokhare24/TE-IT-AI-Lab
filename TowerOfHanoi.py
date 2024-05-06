@@ -7,7 +7,7 @@ def print_pegs(pegs, n):
             else:
                 print(" | ", end="")
         print()
-    print("------------------------")  # Adjust base length dynamically
+    print("------------------------") 
 
 def move_disk(n, source, target, auxiliary, pegs, total_disks):
     """ Recursive function to move disks """
