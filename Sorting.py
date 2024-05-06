@@ -1,13 +1,5 @@
 def bubble_sort(data):
-  """
-  Sorts a list of data using the Bubble Sort algorithm.
 
-  Args:
-      data (list): The list of data to be sorted.
-
-  Returns:
-      list: The sorted list.
-  """
   n = len(data)
   swapped = False
   # Iterate through all elements
@@ -23,15 +15,7 @@ def bubble_sort(data):
   return data
 
 def merge_sort(data):
-  """
-  Sorts a list of data using the Merge Sort algorithm (recursive).
 
-  Args:
-      data (list): The list of data to be sorted.
-
-  Returns:
-      list: The sorted list.
-  """
   if len(data) <= 1:
     return data
   # Divide the list into two halves
@@ -55,17 +39,7 @@ def merge_sort(data):
   return merged
 
 def quicksort(data, low, high):
-  """
-  Sorts a list of data using the Quick Sort algorithm (recursive).
-
-  Args:
-      data (list): The list of data to be sorted.
-      low (int): The starting index of the sublist to sort.
-      high (int): The ending index of the sublist to sort.
-
-  Returns:
-      None (sorts the data in-place).
-  """
+ 
   if low < high:
     # Partition the list
     pivot_index = partition(data, low, high)
